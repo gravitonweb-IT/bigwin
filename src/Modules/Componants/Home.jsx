@@ -28,13 +28,13 @@ const Home = () => {
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [showSuccessPopup1, setShowSuccessPopup1] = useState(false);
 
-  const popUp = () => {
-    setShowSuccessPopup(true);
-  };
+  // const popUp = () => {
+  //   setShowSuccessPopup(true);
+  // };
 
-  const popUp1 = () => {
-    setShowSuccessPopup1(true);
-  };
+  // const popUp1 = () => {
+  //   setShowSuccessPopup1(true);
+  // };
 
   return (
     <>
@@ -47,22 +47,21 @@ const Home = () => {
               </a>
             </div>
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before final copy is available
+            The BigWin App In You Can Earn Money By Playing Some Easy Games. There
+        Are Many Easy Games Available And Anyone Can Play But Firstly You Need
+        To Understand And Learn It Because It Is A Skill Base Game.
             </p>
-            <button onClick={popUp1}>
+            {/* <button onClick={popUp1}> */}
               {" "}
               <a
-               
+              
                 className="download-btn"
                 target="_blank"
                 download=""
               >
                 <img src={Img1} className="img-fluid" />
               </a>{" "}
-            </button>
+            {/* </button> */}
             <div className="games">
               <img src={Game1} className="img-fluid" />
               <img src={Game2} className="img-fluid" />
@@ -148,7 +147,7 @@ const Home = () => {
               <img src={Gplay1} className="img-fluid" />
             </span>
             <h4>Download for android</h4>
-            <button onClick={popUp}>
+            {/* <button onClick={popUp}> */}
               {" "}
               <a
                 
@@ -158,7 +157,7 @@ const Home = () => {
               >
                 Download
               </a>
-            </button>
+            {/* </button> */}
           </div>
         </section>
         <div className="telegram">
