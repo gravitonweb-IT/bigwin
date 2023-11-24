@@ -150,7 +150,7 @@ const Home = () => {
             {/* <button onClick={popUp}> */}
               {" "}
               <a
-                
+                href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
                 target="_blank"
                 className="button"
                 download=""
