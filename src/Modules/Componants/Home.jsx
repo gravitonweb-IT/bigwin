@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Home.css";
 import "animate.css";
@@ -22,48 +23,31 @@ import Gplay1 from "../../assets/Images/google_play_icon.svg";
 
 import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
 const Home = () => {
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
-  const [showSuccessPopup1, setShowSuccessPopup1] = useState(false);
-
-  // const popUp = () => {
-  //   setShowSuccessPopup(true);
-  // };
-
-  // const popUp1 = () => {
-  //   setShowSuccessPopup1(true);
-  // };
-
   return (
     <>
-      <>
-        <div className="banner">
-          <div className="container">
-            <div className="logo flex justify-center">
-              <a href="#">
-                <img src={Logo} className="img-fluid" />
-              </a>
-            </div>
-            <p>
-            The BigWin App In You Can Earn Money By Playing Some Easy Games. There
-        Are Many Easy Games Available And Anyone Can Play But Firstly You Need
-        To Understand And Learn It Because It Is A Skill Base Game.
-            </p>
-            {/* <button onClick={popUp1}> */}
-              {" "}
-              <a
-              href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
-                className="download-btn"
-                target="_blank"
-                download=""
-              >
-                <img src={Img1} className="img-fluid" />
-              </a>{" "}
-            {/* </button> */}
-            <div className="games">
-              <img src={Game1} className="img-fluid" />
+      <div className="banner">
+        <div className="container">
+          <div className="logo flex justify-center">
+            <a href="#">
+              <img src={Logo} className="img-fluid" alt="Logo" />
+            </a>
+          </div>
+          <p>
+            The BigWin App allows you to earn money by playing easy games. There
+            are many games available, and anyone can play, but first, you need
+            to understand and learn them because they are skill-based games.
+          </p>
+          <a
+            href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
+            className="download-btn"
+            download="BigWin(1.0.1).apk"
+          >
+            <img src={Img1} className="img-fluid" alt="Download" />
+          </a>
+          <div className="games">
+            <img src={Game1} className="img-fluid" />
               <img src={Game2} className="img-fluid" />
               <img src={Game3} className="img-fluid" />
               <img src={Game4} className="img-fluid" />
@@ -72,13 +56,13 @@ const Home = () => {
               <img src={Game7} className="img-fluid" />
               <img src={Game8} className="img-fluid" />
               <img src={Game9} className="img-fluid" />
-            </div>
-          </div>
         </div>
-        <section className="service_sec">
-          <div className="container">
-            <div className="row">
-              <div className="col">
+      </div>
+
+      <section className="service_sec">
+        <div className="container">
+          <div className="row">
+            <div className="col">
                 <div
                   className="service_cont"
                   data-aos="zoom-in"
@@ -132,119 +116,58 @@ const Home = () => {
                   <img src={Screen6} className="img-fluid" />
                 </div>
               </div>
-            </div>
-            <div className="anim_logo">
-              <span className="anim">
-                <img src={Logo} />
-              </span>
-            </div>
           </div>
-        </section>
-
-        <section className="download_app">
-          <div className="container">
-            <span>
-              <img src={Gplay1} className="img-fluid" />
+          <div className="anim_logo">
+            <span className="anim">
+              <img src={Logo} alt="Animated Logo" />
             </span>
-            <h4>Download for android</h4>
-            {/* <button onClick={popUp}> */}
-              {" "}
-              <a
-                href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
-                target="_blank"
-                className="button"
-                download=""
-              >
-                Download
-              </a>
-            {/* </button> */}
           </div>
-        </section>
-        <div className="telegram">
-          <a href="https://t.me/bigwinappofficial" target="_blank">
-            <FontAwesomeIcon icon={faTelegram} />
+        </div>
+      </section>
+
+      <section className="download_app">
+        <div className="container">
+          <span>
+            <img src={Gplay1} className="img-fluid" alt="Google Play" />
+          </span>
+          <h4>Download for Android</h4>
+          <a
+            href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
+            className="button"
+            download="BigWin(1.0.1).apk"
+          >
+            Download
           </a>
         </div>
+      </section>
 
-        {showSuccessPopup && (
-  <div className="fixed inset-0 flex items-center bg-transparent justify-center z-10">
-    <div className="bg-black opacity-80 p-8 rounded shadow-lg text-center max-w-md">
-      <h2 className="text-3xl font-bold text-sky-500 mb-4">
-        Google Play Protect
-      </h2> <div className="logo flex justify-center">
-              <a href="#">
-                <img src={Logo} className="img-fluid" />
-              </a>
-            </div>
-      
-
-      <p className="w-full font-semibold text-white text-center">
-        The BigWin App In You Can Earn Money By Playing Some Easy Games. There
-        Are Many Easy Games Available And Anyone Can Play But Firstly You Need
-        To Understand And Learn It Because It Is A Skill Base Game.
-      </p>
-
-      <div className="mt-6 ">
-      <a
-                href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
-                target="_blank"
-                className="button"
-                download=""
-              >
-                Download
-              </a>
-        <button
-          className="bg-green-500 ml-6 font-semibold text-white px-4 py-2 rounded hover:bg-green-600"
-          onClick={() => setShowSuccessPopup(false)}
-        >
-          Close
-        </button>
+      <div className="telegram">
+        <a href="https://t.me/bigwinappofficial" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTelegram} />
+        </a>
       </div>
-    </div>
-  </div>
-)}
-
-
-{showSuccessPopup1 && (
-  <div className="fixed inset-0 flex items-center bg-transparent justify-center z-10">
-    <div className="bg-black opacity-80 p-8 rounded shadow-lg text-center max-w-md">
-      <h2 className="text-3xl font-bold text-sky-500 mb-4">
-        Google Play Protect
-      </h2>
-       <div className="logo flex justify-center">
-              <a href="#">
-                <img src={Logo} className="img-fluid" />
-              </a>
-            </div>
-      
-      <p className="w-full text-white text-center font-semibold">
-        The BigWin App In You Can Earn Money By Playing Some Easy Games. There
-        Are Many Easy Games Available And Anyone Can Play But Firstly You Need
-        To Understand And Learn It Because It Is A Skill Base Game.
-      </p>
-
-      <div className="mt-6 ">
-      <a
-                href="http://13.53.77.122:3003/img/BigWin(1.0.1).apk"
-                target="_blank"
-                className="button"
-                download=""
-              >
-                Download
-              </a>
-        <button
-          className="bg-green-500 ml-6 font-semibold text-white px-4 py-2 rounded hover:bg-green-600"
-          onClick={() => setShowSuccessPopup1(false)}
-        >
-          Close
-        </button>
       </div>
-    </div>
-  </div>
-)}
-      </>
     </>
   );
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
